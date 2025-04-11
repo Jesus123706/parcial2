@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro TecnoApp</title>
+  <link rel="stylesheet" href="css/registro.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="titulo">🧠 TecnoApp</h1>
+    <h2 class="subtitulo">Construye tu futuro digital</h2>
+    <p class="descripcion">
+      Regístrate para acceder a recursos, tecnología y formación de alto nivel.
+    </p>
+
+    <div class="formulario">
+      <h2 class="form-title">Formulario de Registro</h2>
+      <form id="registroForm">
+        <div class="input-container"><i class="fas fa-user"></i>
+          <input type="text" id="nombre" placeholder="Nombre completo" required />
+        </div>
+
+        <div class="input-container"><i class="fas fa-id-badge"></i>
+          <select id="tipoDocumento" required>
+            <option value="">Tipo de documento</option>
+            <option value="CC">Cédula</option>
+            <option value="TI">Tarjeta de Identidad</option>
+            <option value="CE">Cédula de Extranjería</option>
+            <option value="Pasaporte">Pasaporte</option>
+          </select>
+        </div>
+
+        <div class="input-container"><i class="fas fa-id-card"></i>
+          <input type="text" id="documento" placeholder="Número de documento" required />
+        </div>
+
+        <div class="input-container"><i class="fas fa-calendar"></i>
+          <input type="date" id="fechaNacimiento" required />
+        </div>
+
+        <div class="input-container"><i class="fas fa-envelope"></i>
+          <input type="email" id="correo" placeholder="Correo institucional" required />
+        </div>
+
+        <div class="input-container"><i class="fas fa-phone"></i>
+          <input type="tel" id="telefono" placeholder="Teléfono de contacto" required />
+        </div>
+
+        <div class="input-container"><i class="fas fa-map-marker-alt"></i>
+          <input type="text" id="ciudad" placeholder="Ciudad de residencia" required />
+        </div>
+
+        <div class="input-container"><i class="fas fa-user-circle"></i>
+          <input type="text" id="usuario" placeholder="Usuario de acceso" required />
+        </div>
+
+        <div class="input-container"><i class="fas fa-lock"></i>
+          <input type="password" id="contrasena" placeholder="Contraseña" required />
+        </div>
+
+        <div class="input-container"><i class="fas fa-laptop-code"></i>
+          <select id="especialidad" required>
+            <option value="">Área de especialidad</option>
+            <option value="Desarrollo">Desarrollo de Software</option>
+            <option value="IA">Inteligencia Artificial</option>
+            <option value="Ciberseguridad">Ciberseguridad</option>
+            <option value="UX/UI">Diseño UX/UI</option>
+            <option value="Redes">Redes y Telecomunicaciones</option>
+          </select>
+        </div>
+
+        <button type="submit" class="boton">Registrarse</button>
+      </form>
+
+      <div class="opciones">
+        <a href="index.html">¿Ya tienes cuenta? Inicia sesión</a>
+      </div>
+    </div>
+  </div>
+  <script src="js/registro.js"></script>
+</body>
+</html>

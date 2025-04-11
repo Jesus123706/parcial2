@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1470&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.7);
+  max-width: 500px;
+  margin: 4rem auto;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.titulo {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #00d4ff;
+}
+
+.subtitulo {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.descripcion {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+.formulario {
+  width: 100%;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.input-container i {
+  position: absolute;
+  left: 15px;
+  top: 13px;
+  color: #00d4ff;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px 15px 10px 40px;
+  border: none;
+  border-radius: 10px;
+  background: #f1f1f1;
+  font-size: 1rem;
+  color: #333;
+}
+
+input:focus, select:focus {
+  outline: none;
+  background-color: #e8f0fe;
+}
+
+.boton {
+  width: 100%;
+  background-color: #00d4ff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boton:hover {
+  background-color: #009fc2;
+}
+
+.opciones {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.opciones a {
+  color: #00d4ff;
+  text-decoration: none;
+}
+
+.opciones a:hover {
+  text-decoration: underline;
+}
