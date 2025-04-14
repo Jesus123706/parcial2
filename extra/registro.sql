@@ -3,7 +3,7 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
    CREATE TABLE IF NOT EXISTS `registro` (
-  `id` int(11) NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(50) NOT NULL,
   `tipoDocumento` varchar(50) NOT NULL,
   `documento` varchar(50) NOT NULL,
@@ -13,7 +13,7 @@ SET time_zone = "+00:00";
   `ciudad` varchar(40) NOT NULL,
   `usuario` varchar(40) NOT NULL,
   `contraseña` varchar(10) NOT NULL,
-  `especialidad` varchar(10) NOT NULL,
+  `especialidad` varchar(70) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 

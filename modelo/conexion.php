@@ -1,13 +1,22 @@
+
 <?php
-class Conexion {
-    public static function conectar() {
-        try {
-            $db = new PDO('mysql:host=127.0.0.1;dbname=registro', 'admin', '4304b');
-            $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            return $db;
-        } catch (PDOException $e) {
-            die("Error de conexión: " . $e->getMessage());
-        }
+class Formulario{
+    private $Modelo;
+    private $db;    
+    private $datos;    
+    public function __construct(){
+        $this->Modelo = array();
+        $this->db = new PDO('mysql:host=127.0.0.1;dbname=registro',"admin","4303b");
     }
+    public function insertar($tabla, $data){
+        $consulta="insert into ".$tabla."(nombre, tipoDocumento, documento, fechaNacimiento, correo, telefono, ciudad, usuario, contraseña, especialidad) values(". $data .")";
+        echo $consulta;
+        $resultado=$this->db->query($consulta);
+        if ($resultado) {
+            return true;
+        }else {
+            return false;
+        }
+     }
+
 }
-?>

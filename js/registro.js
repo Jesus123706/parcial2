@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("registroForm");
 
   form.addEventListener("submit", function (e) {
-    e.preventDefault();
+   
 
     const nombre = document.getElementById("nombre").value.trim();
     const tipoDocumento = document.getElementById("tipoDocumento").value;
@@ -16,11 +16,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const especialidad = document.getElementById("especialidad").value;
 
     if (!nombre || !tipoDocumento || !documento || !fechaNacimiento || !correo || !telefono || !ciudad || !usuario || !contrasena || !especialidad) {
+      e.preventDefault();
       alert("⚠️ Por favor, completa todos los campos.");
       return;
     }
 
     alert(`✅ ¡Registro exitoso!\nBienvenido/a ${nombre}`);
-    window.location.href = "index.html";
+   
   });
 });
