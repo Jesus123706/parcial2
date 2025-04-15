@@ -22,6 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     alert(`✅ ¡Registro exitoso!\nBienvenido/a ${nombre}`);
-   
+    window.location.href = "index.html";
   });
 });

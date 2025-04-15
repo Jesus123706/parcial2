@@ -18,8 +18,7 @@ SET time_zone = "+00:00";
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 
-INSERT INTO `registro` (`nombre`,`tipoDocumento`, `documento`, `fechaNacimiento`, `correo`, `telefono`, `ciudad`, `usuario`, `contraseña`,`especialidad`) VALUES
-('Juan','Cédula', '123456789', '1990-01-01', 'juan@example.com', '1234567890', 'Bogotá', 'juan123', '123','Desarrollo de');
+
 
 
 

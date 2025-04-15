@@ -6,8 +6,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = "'" . implode("', '", $_POST) . "'";
     $tabla = 'registro';
 
-    echo $formulario->insertar($tabla, $data) 
-        ? "✅ Registro insertado correctamente." 
-        : "❌ Error al insertar el registro.";
+   
+    if ($formulario->insertar($tabla, $data)) {
+        // Redirigir a la página principal después de un registro exitoso
+        header("Location: ../index.html");
+        exit;
+    } else {
+        echo "❌ Error al insertar el registro.";
+    }
 }
 ?>
