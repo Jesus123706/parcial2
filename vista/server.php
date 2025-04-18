@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    
     if ($formulario->insertar($tabla, $data)) {
         // Redirigir a la página principal después de un registro exitoso
-        header("Location: ../index.html");
+        header("Location: /parcial2/index.html");
         exit;
     } else {
         echo "❌ Error al insertar el registro.";
