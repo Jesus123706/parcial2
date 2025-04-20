@@ -19,14 +19,14 @@
 
         <div class="formulario">
             <h2 class="form-title">Iniciar Sesión</h2>
-            <form id="loginForm">
+            <form id="loginForm" action="./vista/inicio.php" method="post">
                 <div class="input-container">
                     <i class="fas fa-user"></i>
-                    <input type="text" id="usuario" placeholder="Usuario" required>
+                    <input type="text" id="usuario" name="usuario" placeholder="Usuario" required>
                 </div>
                 <div class="input-container">
                     <i class="fas fa-lock"></i>
-                    <input type="password" id="contrasena" placeholder="Contraseña" required>
+                    <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" required>
                 </div>
                 <button type="submit" class="boton">Ingresar</button>
             </form>
