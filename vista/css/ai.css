@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://source.unsplash.com/1920x1080/?technology,ai') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: left;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: #00ffd0;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  header a:hover {
+    color: #ffffff;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #00ffd0;
+  }
+  
+  .container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #00ffd0;
+    font-size: 2.5em;
+  }
+  
+  .section {
+    margin-bottom: 25px;
+  }
+  
+  .section h2 {
+    color: #00ffc3;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #00ffd0;
+    padding-bottom: 5px;
+  }
+  
+  .section p {
+    text-align: justify;
+    font-size: 1.1em;
+  }
+  
+  .chart-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 15px;
+  }
+  
+  #chart {
+    width: 100% !important;
+    max-width: 600px;
+    margin: auto;
+  }
+  

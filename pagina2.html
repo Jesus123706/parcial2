@@ -1,20 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Inicio de Sesión</title>
-  <link rel="stylesheet" href="./vista/css/login.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tecnologías Futuras - Mis Metas</title>
+  <link rel="stylesheet" href="vista/css/pagina2.css">
 </head>
 <body>
-  <div class="login-container">
-    <h2>Iniciar Sesión</h2>
-    <form id="formLogin">
-      <input type="text" id="usuario" placeholder="Usuario" required>
-      <input type="password" id="contrasena" placeholder="Contraseña" required>
-      <div id="errorMensaje" class="error-message"></div>
-      <button type="submit">Ingresar</button>
+  <header>
+    <nav>
+      <a href="index.html">Inicio</a> |
+      <a href="registro.html">Registro</a>
+    </nav>
+  </header>
+
+  <main class="contenido">
+    <section class="formulario">
+      <h2>Metas Personales</h2>
+      <form id="metasForm">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" required>
+
+        <label for="metaCorto">Meta corto plazo</label>
+        <input type="text" id="metaCorto" required>
+
+        <label for="metaMediano">Meta mediano plazo</label>
+        <input type="text" id="metaMediano" required>
+
+        <label for="metaLargo">Meta largo plazo</label>
+        <input type="text" id="metaLargo" required>
+
+        <button type="submit">Guardar</button>
+      </form>
+    </section>
+
+    <section class="enlaces">
+      <a href="inteligencia.html">Inteligencia Artificial</a>
+      <a href="criptomonedas.html">Criptomonedas</a>
+      <a href="espacial.html">Computacional Espacial</a>
+      <a href="energetica.html">Computacional Energética</a>
+    </section>
+  </main>
+
+  <footer class="encuesta">
+    <form>
+      <label>¿Qué tanto te interesa la tecnología?</label><br>
+      <label><input type="radio" name="interes" value="1"> 1</label>
+      <label><input type="radio" name="interes" value="2"> 2</label>
+      <label><input type="radio" name="interes" value="3"> 3</label>
+      <label><input type="radio" name="interes" value="4"> 4</label>
+      <label><input type="radio" name="interes" value="5"> 5</label>
+      <button type="submit">Enviar</button>
     </form>
-  </div>
-  <script src="js/login.js"></script>
+  </footer>
+
+  <script src="js/pagina2.js"></script>
 </body>
 </html>
