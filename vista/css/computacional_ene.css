@@ -1,0 +1,87 @@
+/* Fondo general */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  background: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Encabezado */
+header {
+  padding: 20px;
+  text-align: left;
+}
+
+/* Enlace de navegación */
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* Contenedor principal */
+.container {
+  background-color: rgba(0, 0, 0, 0.85);
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.9);
+  text-align: justify;
+  backdrop-filter: blur(10px);
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #00d4ff;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 10px #000;
+}
+
+/* Títulos de sección */
+h2 {
+  text-align: center;
+  font-size: 30px;
+  color: #00ffd9;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 5px #000;
+}
+
+/* Párrafos */
+p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #e0f7fa;
+}
+
+/* Palabras destacadas */
+strong {
+  color: #00ffff;
+}
+
+/* Para pequeños detalles */
+.section {
+  margin-bottom: 30px;
+}
+
+/* Ajuste en canvas de gráficos si usas Chart.js */
+.chart-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 30px;
+}
