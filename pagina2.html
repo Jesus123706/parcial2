@@ -3,56 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tecnologías Futuras - Mis Metas</title>
-  <link rel="stylesheet" href="vista/css/pagina2.css">
+  <title>Tecnologías Futuras</title>
+  <link rel="stylesheet" href="./vista/css/pagina2.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Inicio</a> |
-      <a href="registro.html">Registro</a>
-    </nav>
-  </header>
-
-  <main class="contenido">
-    <section class="formulario">
-      <h2>Metas Personales</h2>
-      <form id="metasForm">
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" required>
-
-        <label for="metaCorto">Meta corto plazo</label>
-        <input type="text" id="metaCorto" required>
-
-        <label for="metaMediano">Meta mediano plazo</label>
-        <input type="text" id="metaMediano" required>
-
-        <label for="metaLargo">Meta largo plazo</label>
-        <input type="text" id="metaLargo" required>
-
-        <button type="submit">Guardar</button>
-      </form>
-    </section>
-
-    <section class="enlaces">
-      <a href="./ia.html">Inteligencia Artificial</a>
-      <a href="./criptomonedas.html">Criptomonedas</a>
-      <a href="./computacional_espacial.html">Computacional Espacial</a>
-      <a href="./computacional_energetica.html">Computacional Energética</a>
-    </section>
+  <main class="contenedor-horizontal">
+    <h1>Tecnologías Futuras</h1>
+    <div class="botones-temas">
+      <a href="ia.html">Inteligencia Artificial</a>
+      <a href="criptomonedas.html">Criptomonedas</a>
+      <a href="computacional_espacial.html">Computacional Espacial</a>
+      <a href="computacional_energetica.html">Computacional Energética</a>
+    </div>
   </main>
-
-  <footer class="encuesta">
-    <form>
-      <label>¿Qué tanto te interesa la tecnología?</label><br>
-      <label><input type="radio" name="interes" value="1"> 1</label>
-      <label><input type="radio" name="interes" value="2"> 2</label>
-      <label><input type="radio" name="interes" value="3"> 3</label>
-      <label><input type="radio" name="interes" value="4"> 4</label>
-      <label><input type="radio" name="interes" value="5"> 5</label>
-      <button type="submit">Enviar</button>
-    </form>
-  </footer>
 
   <script src="js/pagina2.js"></script>
 </body>
