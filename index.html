@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoApp - Iniciar Sesión</title>
+    <link rel="stylesheet" href="./vista/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo">🌐 TecnoApp</h1>
+        <h2 class="subtitulo">Innovando con tecnología</h2>
+        <p class="descripcion">
+            La tecnología transforma el mundo, conecta personas y crea soluciones digitales que mejoran la vida. 
+            Con TecnoApp, explora nuevas ideas, aprende y evoluciona con nosotros. 
+        </p>
+
+        <div class="formulario">
+            <h2 class="form-title">Iniciar Sesión</h2>
+            <form id="loginForm" action="./vista/inicio.php" method="post">
+                <div class="input-container">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="usuario" name="usuario" placeholder="Usuario" required>
+                </div>
+                <div class="input-container">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" required>
+                </div>
+                <button type="submit" class="boton">Ingresar</button>
+            </form>
+            <div class="opciones">
+                <a href="../parcial2/vista/registro.html">¿No tienes cuenta? Regístrate</a><br>
+            
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
+

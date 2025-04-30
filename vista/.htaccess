@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# Excluir el archivo de login y recursos estáticos (CSS, JS, imágenes)
+RewriteCond %{REQUEST_URI} ^/vista/inicio.php$ [OR]
+RewriteCond %{REQUEST_URI} ^/vista/css/ [OR]
+RewriteCond %{REQUEST_URI} ^/vista/js/ [OR]
+RewriteCond %{REQUEST_URI} ^/vista/img/ [OR]
+RewriteCond %{REQUEST_URI} ^/vista/index.html$ [OR]
+RewriteCond %{REQUEST_URI} ^/vista/registro.html$ [OR]
+RewriteCond %{REQUEST_URI} ^/vista/recuperar.html$
+
+# Si no coincide con las exclusiones, redirigir a autenticacion.php
+RewriteRule ^(.*)$ controlador/autenticacion.php [L]
