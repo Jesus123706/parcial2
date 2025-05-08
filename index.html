@@ -14,25 +14,25 @@
         <h2 class="subtitulo">Innovando con tecnología</h2>
         <p class="descripcion">
             La tecnología transforma el mundo, conecta personas y crea soluciones digitales que mejoran la vida. 
-            Con TecnoApp, explora nuevas ideas, aprende y evoluciona con nosotros.
+            Con TecnoApp, explora nuevas ideas, aprende y evoluciona con nosotros. 
         </p>
 
         <div class="formulario">
             <h2 class="form-title">Iniciar Sesión</h2>
-            <form id="loginForm">
+            <form id="loginForm" action="./vista/inicio.php" method="post">
                 <div class="input-container">
                     <i class="fas fa-user"></i>
-                    <input type="text" id="usuario" placeholder="Usuario" required>
+                    <input type="text" id="usuario" name="usuario" placeholder="Usuario" required>
                 </div>
                 <div class="input-container">
                     <i class="fas fa-lock"></i>
-                    <input type="password" id="contrasena" placeholder="Contraseña" required>
+                    <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" required>
                 </div>
                 <button type="submit" class="boton">Ingresar</button>
             </form>
             <div class="opciones">
-                <a href="registro.html">¿No tienes cuenta? Regístrate</a><br>
-                <a href="recuperar.html">¿Olvidaste tu contraseña?</a>
+                <a href="../parcial2/vista/registro.html">¿No tienes cuenta? Regístrate</a><br>
+            
             </div>
         </div>
     </div>
@@ -40,3 +40,4 @@
     <script src="js/index.js"></script>
 </body>
 </html>
+
